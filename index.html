@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="K Logo.png" type="image/x-icon">
+  <title>Kerala Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-dyBThCSXGp3zfxlKsKUHeAYqsl+HOyFFz47XMqnBU4E8jI+zHJM0P4C79Bfu+H4" crossorigin="anonymous">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header id="intro">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-scroll " style="z-index: 2000 ; height:70px;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank">
+          <strong class="kerala_tourism">Kerala Tourism</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon" style="z-index: 2000;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_kerala_heading" rel="nofollow"">About</a>
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#destination-carousel">Destinations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#districts_of_kerala" ">Districts</a>
+            </li>
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#things_to_do_in_kerala">Things to Do</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_us_for_more">Contact</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol id="about_kerala_heading" class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0,0 );">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Explore God's Own Country</h1>
+                <h5 class="mb-4">Discover the serene backwaters, lush greenery, and rich heritage of Kerala.</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="#contact_us_for_more" role="button"
+                  rel="nofollow">Plan Your Visit</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="#things_to_do_in_kerala" role="button">Things to
+                  Do</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Escape to a Land of Tranquility and Breathtaking beauty</h2>
+                <a class="btn btn-outline-light btn-lg m-2" href="#destination-carousel" role="button">Top
+                  Destinations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, ),
+                  rgba(91, 14, 214, 0.7) 
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Immerse Yourself in Kerala's Vibrant Culture</h2>
+                <a class="btn btn-outline-light btn-lg m-2" href="#traditions_of_kerala_01" role="button">Explore
+                  Traditions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <i class="fas fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <main>
+    <!-- About section start -->
+    <section>
+      <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+      <div class=" mt-2 border-bottom border-dark-subtle border-3"></div>
+      <h1 id="about" class="text-center mt-5 mb-4"><strong>About Kerala</strong></h1>
+
+      <p class="about_kerala_paragraph" style="line-height: 1.8; text-align: justify;"> <strong>Kerala</strong>,
+        situated at the southwestern tip of the Indian subcontinent, is a land of rich cultural heritage and historical
+        significance. Renowned for its long-standing traditions in art, culture, and foreign trade, Kerala is also the
+        Indian state with the highest literacy rate. It has made remarkable progress in education, healthcare, gender
+        equality, social justice, and law and order. The state also boasts the lowest infant mortality rate in the
+        country. </p>
+      <p class="about_kerala_paragraph" style="line-height: 1.8; text-align: justify;"> Lying between the
+        <strong>Arabian Sea</strong> in the west and the <strong>Western Ghats</strong> (Sahyadris) in the east, Kerala
+        spans an area of 38,863 square kilometers. It is one of the five states forming the linguistic and cultural
+        region of South India, bordered by <strong>Tamil Nadu</strong> and <strong>Karnataka</strong>. Additionally,
+        <strong>Mahe</strong>, a part of the Union Territory of Puducherry, is geographically located within Kerala. The
+        <strong>Lakshadweep Islands</strong> in the Arabian Sea, though part of a Union Territory, share linguistic and
+        cultural ties with Kerala.
+      </p>
+
+      <p class="about_kerala_paragraph" style="line-height: 1.8; text-align: justify;"> Known as <strong>"God's Own
+          Country"</strong>, Kerala is celebrated for its palm-lined beaches, tranquil backwaters, and breathtaking
+        landscapes. The state is blessed with lush tea gardens, dense forests, serene backwaters, and crisscrossing
+        rivers. The <strong>Western Ghats</strong>, with their verdant hills and diverse wildlife, form Kerala’s eastern
+        natural border, while the Arabian Sea stretches along its western coastline. </p>
+
+      <p class="about_kerala_paragraph" style="line-height: 1.8; text-align: justify;"> Kerala’s history is deeply
+        rooted in ancient traditions, making it a hub for maritime trade for centuries. It is renowned for its
+        traditional art forms like <strong>Kathakali</strong> and <strong>Mohiniyattam</strong>, its classical music,
+        and the age-old healing system of <strong>Ayurveda</strong>. With a literacy rate exceeding 96%, Kerala stands
+        as the most literate state in India and serves as a model for socio-economic development. </p>
+
+      <p class="about_kerala_paragraph" style="line-height: 1.8; text-align: justify;"> Kerala's tropical climate,
+        monsoon rains, and diverse geography make it a year-round destination for travelers and nature enthusiasts. Its
+        famous attractions include the backwaters of <strong>Alappuzha</strong>, the golden beaches of
+        <strong>Kovalam</strong>, the hill stations of <strong>Munnar</strong>, and the wildlife sanctuaries of
+        <strong>Thekkady</strong>. Offering a perfect blend of natural beauty, culture, and history, Kerala continues to
+        captivate tourists from around the world.
+      </p>
+
+      <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+      <div class=" mt-2 border-bottom border-dark-subtle border-3"></div>
+    </section>
+    <!-- about section ends -->
+
+
+    <!-- Top Destinations start -->
+    <section id="destination-carousel">
+      <h2>Explore Our Top Destinations</h2>
+      <div class="destination-slider-wrapper">
+        <div class="destination-slider">
+          <div class="destination-slide" style="background-image: url('Destinations/Allapey .jpg');">
+            <div class="destination-content">
+              <h3>Alleppey – The Venice of India</h3>
+              <p>The serene backwaters of Kerala offer a unique boating experience amidst lush landscapes</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/The_beauty_of_Munnar_35.jpg');">
+            <div class="destination-content">
+              <h3>Munnar – South India’s Tea Heaven</h3>
+              <p>Explore 80,000 miles of tea plantation.</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/Kollam Garuda Statue.jpg');">
+            <div class="destination-content">
+              <h3>Garuda Statue of Kollam</h3>
+              <p>The Garuda Statue in Kollam, Kerala, is one of the tallest statues in India, symbolizing strength and
+                devotion.</p>
+            </div>
+          </div>
+          <!-- You can add more slides like this -->
+          <div class="destination-slide" style="background-image: url('Destinations/fort kochi.jpg');">
+            <div class="destination-content">
+              <h3>Fort Kochi</h3>
+              <p>Fort Kochi is a historic coastal town with colonial architecture and vibrant cultural heritage</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/kovalam beach.jpg');">
+            <div class="destination-content">
+              <h3>Kovalam – Kerala’s Beach Paradise</h3>
+              <p>Kovalam is a popular beach destination known for its serene beaches and picturesque landscapes.</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/padmanabha temple.jpg');">
+            <div class="destination-content">
+              <h3>Padmanabhaswamy Temple</h3>
+              <p>Padmanabhaswamy Temple in Thiruvananthapuram is an ancient and iconic Hindu temple dedicated to Lord
+                Vishnu.</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/Thekkady tiger reserve.jpg');">
+            <div class="destination-content">
+              <h3>Periyar Tiger Reserve (Thekkady)</h3>
+              <p>Periyar Tiger Reserve offers thrilling wildlife experiences amidst rich biodiversity in Thekkady,
+                Kerala.</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/Thrissur_Pooram_40.jpg');">
+            <div class="destination-content">
+              <h3>Thrissur – Kerala’s Cultural Capital</h3>
+              <p>Thrissur is known for its vibrant cultural festivals and historic temples, making it Kerala's cultural
+                heart</p>
+            </div>
+          </div>
+          <div class="destination-slide" style="background-image: url('Destinations/wayanad.jpg');">
+            <div class="destination-content">
+              <h3>Wayanad – Nature’s Very Own Garden</h3>
+              <p>Wayanad is a scenic district filled with lush greenery, waterfalls, and a haven for nature lovers</p>
+            </div>
+
+          </div>
+          <div class="destination-slide"
+            style="background-image: url('Destinations/Kozhikode – Spicy haven on the Malabar coast.jpg');">
+            <div class="destination-content">
+              <h3>Kozhikode – The City of Spices</h3>
+              <p>Kozhikode is famous for its rich history, cultural heritage, and delicious cuisine</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="know-more-section">
+        <button id="know-more-btn" onclick="window.location.href='#contact_us_for_more';">Know More</button>
+
+        <div class="extra-content">
+
+        </div>
+      </div>
+    </section>
+
+    <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+    <div id="districts_of_kerala" class=" mt-2 border-bottom border-dark-subtle border-3"></div>
+
+    <!-- Top Destinations End -->
+
+
+
+    <!-- start of Districts -->
+
+    <section>
+      <div class="container">
+        <div class="row mt-2 align-items-center">
+          <div class="m-3 text-center">
+            <h1>Districts of Kerala</h1>
+          </div>
+
+          <div class="col-12 col-md-6 ">
+
+            <p>These 14 districts are further divided into 62 taluks, 1453 revenue villages and 1007 gramapanchayats.
+
+            </p>
+
+            <ol>
+              <li><a href="#Thiruvananthapuram">Thiruvananthapuram</a></li>
+              <li><a href="#Kollam">Kollam</a></li>
+              <li><a href="#Pathanamthitta">Pathanamthitta</a></li>
+              <li><a href="#Alappuzha">Alappuzha</a></li>
+              <li><a href="#Kottayam">Kottayam</a></li>
+              <li><a href="#Idukki">Idukki</a></li>
+              <li><a href="#Ernakulam">Ernakulam</a></li>
+              <li><a href="#Thrissur">Thrissur</a></li>
+              <li><a href="#Palakkad">Palakkad</a></li>
+              <li><a href="#Malappuram">Malappuram</a></li>
+              <li><a href="#Kozhikode">Kozhikode</a></li>
+              <li><a href="#Wayanad">Wayanad</a></li>
+              <li><a href="#Kannur">Kannur</a></li>
+              <li><a href="#Kasaragod">Kasaragod</a></li>
+            </ol>
+
+            <button id="know-more-btn" onclick="window.location.href='#contact_us_for_more';">Know More</button>
+
+
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="Districts/all districts 01.jpg" alt="Image of all districts" width="100%" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <h1 class="text-center mb-4">Top Tourist Places from Kerala Districts</h1>
+        <div class="row g-4">
+          <!-- Trivandrum -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Thiruvananthapuram" class="card">
+              <img src="Districts/01 - agasthyarkoodam.jpg" class="card-img-top" alt="Agasthyamala Peak">
+              <div class="card-body">
+                <h5 class="card-title">Thiruvananthapuram</h5>
+                <p class="card-text"> <strong>Agasthyamala Peak: </strong> Explore the lush greenery and serene beauty
+                  of the Agasthyamala Biosphere Reserve</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kollam -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Kollam" class="card">
+              <img src="Districts/02 -Thenmala_Ecotourism.jpg.jpg" class="card-img-top" alt="Thenmala Dam">
+              <div class="card-body">
+                <h5 class="card-title">Kollam</h5>
+                <p class="card-text"><strong>Thenmala Dam:</strong> Experience the tranquility and adventure at India's
+                  first planned eco-tourism destination.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Pathanamthitta -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Pathanamthitta" class="card">
+              <img src="Districts/03 - Gavi.jpg" class="card-img-top" alt="Gavi">
+              <div class="card-body">
+                <h5 class="card-title">Pathanamthitta</h5>
+                <p class="card-text"><strong>Gavi:</strong> Immerse yourself in the pristine wilderness of the evergreen
+                  Gavi forests.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Alappuzha -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Alappuzha" class="card">
+              <img src="Districts/04 - marari-beach-from-alleppey-day-t.jpg" class="card-img-top" alt="Marari Beach">
+              <div class="card-body">
+                <h5 class="card-title">Alappuzha</h5>
+                <p class="card-text"><strong>Marari Beach:</strong> Relax on the sandy shores of Marari, one of Kerala’s
+                  best-kept secrets.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kottayam -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Kottayam" class="card">
+              <img src="Districts/05 - St. Alphonsa  Church.jpg" class="card-img-top" alt="St. Alphonsa Church">
+              <div class="card-body">
+                <h5 class="card-title">Kottayam</h5>
+                <p class="card-text"><strong>St. Alphonsa Church:</strong> Visit the sacred shrine dedicated to St.
+                  Alphonsa, India's first woman saint.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Idukki -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Idukki" class="card">
+              <img src="Districts/06 - Munnar.jpg" class="card-img-top" alt="Munnar">
+              <div class="card-body">
+                <h5 class="card-title">Idukki</h5>
+                <p class="card-text"><strong>Munnar:</strong> Wander through the misty hills and sprawling tea
+                  plantations of Munnar.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Ernakulam -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Ernakulam" class="card">
+              <img src="Districts/07 - marine drive.jpg" class="card-img-top" alt="Marine Drive">
+              <div class="card-body">
+                <h5 class="card-title">Ernakulam</h5>
+                <p class="card-text"><strong>Marine Drive:</strong> Enjoy picturesque sunsets and breezy walks along the
+                  waterfront promenade.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Thrissur -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Thrissur" class="card">
+              <img src="Districts/08 - Athirapally_Falls.jpg" class="card-img-top" alt="Athirappilly Waterfalls">
+              <div class="card-body">
+                <h5 class="card-title">Thrissur</h5>
+                <p class="card-text"><strong>Athirappilly Waterfalls:</strong> Marvel at the majestic waterfalls, often
+                  referred to as the Niagara of India.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Palakkad -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Palakkad" class="card">
+              <img src="Districts/09 - silent valley.jpg" class="card-img-top" alt="Silent Valley National Park">
+              <div class="card-body">
+                <h5 class="card-title">Palakkad</h5>
+                <p class="card-text"><strong>Silent Valley National Park:</strong> Discover the untouched beauty of
+                  Kerala’s tropical rainforest.</p>
+
+              </div>
+            </div>
+          </div>
+          <!-- Malappuram -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Malappuram" class="card">
+              <img src="Districts/10 - kottakunnu-park.jpg" class="card-img-top" alt="Kottakunnu Park">
+              <div class="card-body">
+                <h5 class="card-title">Malappuram</h5>
+                <p class="card-text"><strong>Kottakunnu Park:</strong> Delight in panoramic views and recreational
+                  activities at this hilltop park.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kozhikode -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Kozhikode" class="card">
+              <img src="Districts/11 - pazhassi_raja_museum_art_gallery.jpg" class="card-img-top"
+                alt="Pazhassiraja Museum">
+              <div class="card-body">
+                <h5 class="card-title">Kozhikode</h5>
+                <p class="card-text"><strong>Pazhassiraja Museum:</strong> Learn about Kerala’s rich heritage and art at
+                  this historical museum.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Wayanad -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Wayanad" class="card">
+              <img src="Districts/12 - edakkal-caves-wayanad-india-tour.jpg" class="card-img-top" alt="Edakkal Caves">
+              <div class="card-body">
+                <h5 class="card-title">Wayanad</h5>
+                <p class="card-text"><strong>Edakkal Caves:</strong> Uncover ancient rock carvings and the mysteries of
+                  these prehistoric caves.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kannur -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Kannur" class="card">
+              <img src="Districts/13 - Parassinikkadavu-S.jpg" class="card-img-top" alt="Pappinisseri Snake Park">
+              <div class="card-body">
+                <h5 class="card-title">Kannur</h5>
+                <p class="card-text"><strong>Pappinisseri Snake Park:</strong> Witness a wide variety of snake species
+                  at this unique conservation park.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kasaragod -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div id="Kasaragod" class="card">
+              <img src="Districts/14 - bekal-fort.jpg" class="card-img-top" alt="Bekal Fort">
+              <div class="card-body">
+                <h5 class="card-title">Kasaragod</h5>
+                <p class="card-text"><strong>Bekal Fort:</strong> Step into history with a visit to Kerala's largest and
+                  most iconic fort.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+    <div class=" mt-2 border-bottom border-dark-subtle border-3"></div>
+
+    <!-- End of Districts -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start of Things to Do -->
+
+    <section>
+
+      <div id="things_to_do_in_kerala" class="container py-5">
+        <h2 class="text-center mb-4">Things to do in Kerala</h2>
+        <div class="row g-3">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/Screw-Pine-Weaving1.jpg" class="card-img" alt="Responsible Tourism">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Screw Pine Weaving</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/ayurveda6.jpg" class="card-img" alt="Ayurveda">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Ayurveda</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/Paragliding.jpg" class="card-img" alt="Paragliding">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Paragliding</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/A-Journey-through-the-Forest.jpg" class="card-img" alt="Forest Trekking">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Forest Trekking</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/scuba-diving1.jpg" class="card-img" alt="Scuba Diving">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Scuba Diving</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/Hiking.jpg" class="card-img" alt="Hiking">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Hiking</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/Houseboat Cruise 01.jpg" class="card-img" alt="Houseboat Cruise">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Houseboat Cruise</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/backwater tour 01.jpg" class="card-img" alt="Backwater Tour">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Backwater Tour</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="col-md-4">
+            <div class="card card-overlay">
+              <img src="Things to do in Kerala/Cultural Shows 01.jpg" class="card-img" alt="Cultural Shows">
+              <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title text-white">Cultural Shows</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+
+
+
+    <!-- End of Things to Do -->
+
+    <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+    <div class=" mt-2 mb-5 border-bottom border-dark-subtle border-3"></div>
+
+
+    <!-- Start of Traditions & Cultures of Kerala -->
+
+
+    <section id="traditions_of_kerala_01" class="kerala-culture">
+      <h1 class="kerala-culture__heading">Explore Rich Culture & Traditions on your Visit</h1>
+      <p class="kerala-culture__text">Kerala is rich in cultural heritage and traditions that have been passed down
+        through generations. From its delicious cuisine to its traditional attire and unique architecture, Kerala offers
+        a glimpse into the soul of Indian culture.</p>
+
+      <!-- Food of Kerala Section -->
+      <div class="kerala-culture__section">
+        <h2 class="kerala-culture__subheading">Food of Kerala</h2>
+        <p class="kerala-culture__paragraph">The food of Kerala consists of a wide variety of vegetarian and
+          non-vegetarian food. It includes fish, meat, poultry, and rice preparations, along with many spices. Kerala
+          Sadya is a banquet meal prepared during functions and festivals. Kerala food uses coconut oil and milk in many
+          preparations, such as idli, dosa, and curry.</p>
+        <div class="kerala-culture__images">
+          <div class="kerala-culture__image-card">
+            <img src="Foods/Sadhya.jpg" alt="Food of Kerala 1" class="kerala-culture__image">
+            <figcaption>Traditional Kerala Sadhya</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Foods/Puttu and Kadala Currey.jpg" alt="Food of Kerala 2" class="kerala-culture__image">
+            <figcaption>Traditional Kerala Breakfast</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Foods/Different Types of fast food.jpg" alt="Food of Kerala 3" class="kerala-culture__image">
+            <figcaption>Traditional Kerala Fast Food</figcaption>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clothing of Kerala Section -->
+      <div class="kerala-culture__section">
+        <h2 class="kerala-culture__subheading">Clothing and Traditional Dresses of Kerala</h2>
+        <p class="kerala-culture__paragraph">Women of Kerala wear sarees and blouses, especially set sarees called
+          Kasavu during festivals. Men wear 'mundu', a long piece of garment wrapped around their waist. Younger
+          generations generally prefer western clothing, but mundus are still common for casual occasions and sarees are
+          worn for formal ones.</p>
+        <div class="kerala-culture__images">
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/dress 01.jpg" alt="Clothing of Kerala 1" class="kerala-culture__image">
+            <figcaption>Traditional Saree </figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/dress 02.jpg" alt="Clothing of Kerala 2" class="kerala-culture__image">
+            <figcaption>Traditional Mundu</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/image 03.jpg" alt="Clothing of Kerala 3" class="kerala-culture__image">
+            <figcaption>Traditional Kerala Dress</figcaption>
+          </div>
+        </div>
+      </div>
+      <!-- Folk Dance and Music Section -->
+      <div class="kerala-culture__section">
+        <h2 class="kerala-culture__subheading">Folk Dance and Music</h2>
+        <p class="kerala-culture__paragraph"> The folk dance of Kerala consists of the Kaikotti Kali dance, Kuthiyottam
+          dance, Tiruvathira Dance, Thirayattam dance, Kakkarissi Kali, etc. Kanniyar Kali (also known as Desathukali)
+          is a dance done in front of Goddess Bhagvaty. It is one of the oldest folk dances. It is a fast-moving dance
+          to the rhythmic devotional folk tune. Kaikotti Kali folk dance (also known as Thiruvathirakali) is performed
+          by women of Kerala by dancing in symmetric circles. It is often performed during festive seasons like
+          Thiruvathira and Onam.
+        </p>
+        <div class="kerala-culture__images">
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/folk dance 01.jpg" alt="Folk Dance 1" class="kerala-culture__image">
+            <figcaption>Folk Dance Performance </figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/folk dance 02 margam kali.jpg" alt="Folk Dance 2"
+              class="kerala-culture__image">
+            <figcaption>Margam Kali</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/folk dance 03 Oppana.jpg" alt="Folk Dance 3" class="kerala-culture__image">
+            <figcaption>Oppana</figcaption>
+          </div>
+        </div>
+      </div>
+
+      <!-- Festivals of Kerala Section -->
+      <div class="kerala-culture__section">
+        <h2 class="kerala-culture__subheading">Festivals of Kerala</h2>
+        <p class="kerala-culture__paragraph">Onam is a 10-day harvest festival celebrated in Kerala in the month of
+          August - September. The festival is celebrated with grandeur. There are fairs and contests for people to
+          indulge in. The floors are decorated with flower designs; there are dances for celebration and a snake boat
+          race (Aranmula Boat Race) contest called Vallamkali is also carried out. The tenth or the last day of Onam is
+          said to be most important and is one of the most popular manifestations of the Culture of Kerala.
+        </p>
+        <div class="kerala-culture__images">
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/festival 01 Onam.jpg" alt="Onam " class="kerala-culture__image">
+            <figcaption>Onam Festival </figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/festival 01 church festival.jpg" alt="Festival "
+              class="kerala-culture__image">
+            <figcaption>Kappal Pocession</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/festival 03 vallam kalijpg.jpg" alt="Vallam Kali "
+              class="kerala-culture__image">
+            <figcaption>Aranmula Boat Race </figcaption>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rituals of Kerala Section -->
+      <div class="kerala-culture__section">
+        <h2 class="kerala-culture__subheading">Rituals of Kerala</h2>
+        <p class="kerala-culture__paragraph">Most of the rituals are temple rituals. Poothanu Mathirayum is a ritual for
+          Goddess Kali in which dancers dress up as Kaali Ma and dance at all shrines in the village to remove and
+          destroy the evil demon Daarikan. Patayani is a week-long dance ritual for Goddess Kali. It is carried out on
+          the banks of river Pamba. The dancers tell the story of how evil is destroyed by taking up various character
+          roles. Midiyettu and Koothu are other such similar rituals.
+        </p>
+        <div class="kerala-culture__images">
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/ritual 01.jpg" alt="Theyyam" class="kerala-culture__image">
+            <figcaption>Theyyam</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/ritual 02 karva chauth.jpg" alt="Kuruva Chauth"
+              class="kerala-culture__image">
+            <figcaption>Kuruva Chauth</figcaption>
+          </div>
+          <div class="kerala-culture__image-card">
+            <img src="Culture and Traditions/ritual 03 Kadha Kalijpg.jpg" alt="Kadha Kali"
+              class="kerala-culture__image">
+            <figcaption>Kadha Kali</figcaption>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+    <div class=" mt-2 mb-5 border-bottom border-dark-subtle border-3"></div>
+
+    <!-- End of Traditions & Cultures of Kerala -->
+
+    <!-- start of Contact us -->
+
+
+    <section>
+
+      <div id="contact_us_for_more" class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Contact us for more Information</p>
+
+            <form action="Details.html">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- End of Contact us -->
+
+  </main>
+
+  <div class=" mt-5 border-bottom border-dark-subtle border-3"></div>
+  <div class=" mt-2 mb-5 border-bottom border-dark-subtle border-3"></div>
+  <!-- start of footer -->
+
+
+  <footer>
+    <div class="footer-content">  
+
+      <p class="kerala_tourism_name_at_footer">Kerala Tourism</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/keralatourismofficial/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/KeralaTourism" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/keralatourism?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>  
+        <a href="https://www.youtube.com/channel/UCmiF2GcrQwFeiTdnKJ_023A" target="_blank"><i class="fa-brands fa-youtube"></i></a>  
+
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about_kerala_heading">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact_us_for_more">Contact</a></li>
+        </ul>
+      </div>
+      <p class="copyright">Copyright 2024. All Rights Reserved.</p>
+      <p>Created by Anoop</p>
+    </div>
+  </footer>
+
+  <!-- end of footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+  <script src="https://kit.fontawesome.com/ae9fe942d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

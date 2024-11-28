@@ -1,0 +1,632 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 113vh;
+  
+}
+
+/* Scoped Header Carousel Styling */
+#introCarousel .carousel-item:nth-child(1) {
+  background-image: url('Header Photos/Kerala Backwater HD.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#introCarousel .carousel-item:nth-child(2) {
+  background-image: url('Header Photos/kerala forest.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#introCarousel .carousel-item:nth-child(3) {
+  background-image: url('Header Photos/Kadhakali.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+/* --------------------------------------------------------- */
+.navbar-scroll {
+  background-color: rgba(34, 27, 27, 0.651); 
+  backdrop-filter: blur(20px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
+}
+
+@media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: rgba(34, 27, 27, 0.651);
+  backdrop-filter: blur(20px);
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+
+.kerala_tourism {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 35px;
+  
+
+
+  --b: 0.1em;   
+  --c: #10c107d7; 
+  
+  color: #ffffff;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+
+}
+
+.kerala_tourism:hover{
+  --_p: 100%;
+  --_s: .3s;
+  color:#12d707;
+  cursor: pointer;
+}
+/* ============================================================= */
+/* Navbar Animations */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font:bold 1.1rem sans-serif;
+  text-transform: uppercase;
+  color: grey;
+}
+ul li {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+ul li:hover {
+  color: #ffffff;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; 
+  background: #2eac08aa; 
+  scale: 0 1;
+  transition: .3s, translate 0s .3s;
+}
+ul:hover li:before {
+  scale: .8;
+}
+ul li:hover:before {
+  translate: 0;
+  transition: .3s;
+}
+ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+ul:hover li:hover ~ li:before {
+  translate: -100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+/* Buttons animations */
+.btn-outline-light{
+  width: 200px;
+  height: 60px;
+  font-size: 13px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 18px 2px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  color:white;
+}
+.btn-outline-light::before{
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  border-top: 2px solid #9df74d;
+  border-bottom: 2px solid #9df74d;
+  transition: all 0.5s ease;
+}
+
+.btn-outline-light::after{
+  content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            border-left: 2px solid #9df74d;
+            border-right: 2px solid #9df74d;
+            transition: all 0.5s ease;
+            
+            
+}
+.btn-outline-light:hover::before{
+  transform: scale(1.1);
+}
+
+.btn-outline-light:hover::after{
+  transform: scale(0);
+  
+}
+/* =============================================================================== */
+/* About Kerala */
+#about {
+  margin: 50px auto; 
+  text-align: center; 
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #4CAF50; 
+  
+}
+.about_kerala_paragraph{
+  margin: 0 auto; 
+  max-width: 800px; 
+  line-height: 1.8; 
+  font-size: 1.1rem; 
+  text-align: justify;
+}
+#about {
+  animation: fadeInDown 5s ease-out; 
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.about_kerala_paragraph {
+  line-height: 1.8; 
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about_kerala_paragraph {
+      line-height: 1.6; 
+      margin-bottom: 25px; 
+      padding: 0 15px; 
+  }
+}
+@media (max-width: 576px) {
+  .about_kerala_paragraph {
+      line-height: 1.5; 
+      margin-bottom: 30px; 
+      padding: 0 15px; 
+  }
+}
+
+
+/* starting of aurosel */
+/* General Section Styling */
+#destination-carousel {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#destination-carousel h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Slider Container */
+.destination-slider-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.destination-slider {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  animation: destinationSlide 45s infinite; 
+}
+
+.destination-slide {
+  min-width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.destination-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.destination-content p {
+  font-size: 1rem;
+}
+
+
+@keyframes destinationSlide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  30% {
+    transform: translateX(-300%);
+  }
+  40% {
+    transform: translateX(-400%);
+  }
+  50% {
+    transform: translateX(-500%);
+  }
+  60% {
+    transform: translateX(-600%);
+  }
+  70% {
+    transform: translateX(-700%);
+  }
+  80% {
+    transform: translateX(-800%);
+  }
+  90% {
+    transform: translateX(-900%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/* Know More Section */
+.know-more-section {
+  margin-top: 20px;
+}
+
+#know-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#know-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.extra-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.extra-content p {
+  margin: 0 10px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold ;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* end of Districts */
+
+/* start of things to do */
+
+.card-overlay {
+  position: relative;
+  border: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.20rem;
+  font-weight: 600;
+}
+
+.card-img {
+  transition: transform 0.3s ease; 
+}
+
+.card:hover .card-img {
+  transform: scale(1.05); 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+/* start of cultures and traditions */
+
+/* ============================================================================================== */
+
+
+/* Main Section Styling */
+.kerala-culture {
+  
+  padding: 20px;
+  background-color: #fafafa;
+  text-align: center;
+  max-width: 86%;  
+  margin: 0 auto; 
+}
+
+.kerala-culture__heading {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.kerala-culture__text {
+  font-size: 18px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Section for Each Topic */
+.kerala-culture__section {
+  margin-bottom: 50px;
+}
+
+.kerala-culture__subheading {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.kerala-culture__paragraph {
+  font-size: 16px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Image Layout */
+.kerala-culture__images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kerala-culture__image-card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kerala-culture__image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Image Styling */
+.kerala-culture__image {
+  width: 100%;
+  height: 200px;
+  object-fit:cover;
+  border-bottom: 2px solid #ecf0f1;
+  transition: opacity 0.3s ease;
+}
+
+.kerala-culture__image:hover {
+  opacity: 0.8;
+}
+
+/* Caption Styling */
+.kerala-culture__image-card figcaption {
+  font-size: 14px;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kerala-culture {
+      max-width: 90%;  
+      padding: 15px;
+  }
+
+  .kerala-culture__heading {
+      font-size: 28px;  
+  }
+
+  .kerala-culture__subheading {
+      font-size: 24px;  
+  }
+
+  .kerala-culture__text,
+  .kerala-culture__paragraph {
+      font-size: 16px;  
+  }
+
+  .kerala-culture__images {
+      flex-direction: column;  
+  }
+
+  .kerala-culture__image-card {
+      width: 100%;  
+      margin-bottom: 20px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .kerala-culture__heading {
+      font-size: 24px;  
+  }
+
+  .kerala-culture__subheading {
+      font-size: 20px;  
+  }
+
+  .kerala-culture__text,
+  .kerala-culture__paragraph {
+      font-size: 14px;  
+  }
+}
+
+
+/* start of Footer */
+
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+.kerala_tourism_name_at_footer{
+  margin-top:15px;
+}
+
+@media (max-width: 1080px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icons,
+  .footer-links ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icons a,
+  .footer-links li {
+      margin-bottom: 10px;
+  }
+}
+/* End of Footer */
